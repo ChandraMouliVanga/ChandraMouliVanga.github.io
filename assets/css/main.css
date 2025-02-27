@@ -3619,11 +3619,11 @@ input, select, textarea {
 		background: rgba(255, 255, 255, 0.175);
 		height: 4rem;
 		line-height: 4rem;
-		margin: 0 auto ;
+		margin: -4rem auto 0 auto;
 		overflow: hidden;
 		padding: 0 2rem 0 0;
 		position: relative;
-		width: 100%;
+		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
 	}
@@ -3755,17 +3755,17 @@ input, select, textarea {
 
 /* Main */
 
-	#main {
+		#main {
+		
+			background-color: #ffffff;
+			position: relative;
+			margin: 0 auto;
+			width: calc(100% - 4rem);
+			max-width: 72rem;
+			z-index: 2;
+		}
 
-		position: relative;
-    		width: calc(100% - 4rem);
-		max-width: 1300px; /* Adjust width */
-    		margin: 0 auto; /* Center the content */
-   		padding: 20px;
-    		background-color: #ffffff; /* Ensure white background */
-    		display: block;
-    		z-index: 2;
-	}
+
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;
