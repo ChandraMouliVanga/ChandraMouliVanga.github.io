@@ -3759,7 +3759,7 @@ input, select, textarea {
 
 		position: relative;
     		width: calc(100% - 4rem);
-		max-width: 1100px; /* Adjust width */
+		max-width: 1300px; /* Adjust width */
     		margin: 0 auto; /* Center the content */
    		padding: 20px;
     		background-color: #ffffff; /* Ensure white background */
