@@ -3606,23 +3606,26 @@ input, select, textarea {
 /* Nav */
 
 		#nav {
-		    color: #ffffff;
-		    display: flex;
-		    justify-content: space-between; /* Ensures alignment of items */
-		    align-items: center; /* Vertically aligns items */
-		    background: rgba(255, 255, 255, 0.175);
-		    height: 4rem;
-		    line-height: 4rem;
-		    margin: 0 auto; /* Ensures centering */
-		    overflow: hidden;
-		    padding: 0 2rem; /* Adds spacing inside navbar */
-		    position: fixed; /* Ensures it stays at the top */
-		    top: 0;
-		    left: 0;
-		    right: 0;
-		    width: 100%;
-		    max-width: 72rem;
-		    z-index: 10; /* Ensures it stays on top */
+		color: #ffffff;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-transition: -moz-transform 1s ease, opacity 1s ease;
+		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
+		justify-content: space-between; 
+		transition: transform 1s ease, opacity 1s ease;
+		background: rgba(255, 255, 255, 0.175);
+		height: 4rem;
+		line-height: 4rem;
+		margin: 0 auto ;
+		overflow: hidden;
+		padding: 0 2rem 0 0;
+		position: relative;
+		width: 100%;
+		max-width: 72rem;
+		z-index: 2;
 	}
 		#nav ul.divided li {
 			border-top-color: #ffffff;
